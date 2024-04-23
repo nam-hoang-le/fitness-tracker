@@ -4,7 +4,7 @@
 
 The original idea of the idea is taken from the bloom of smart-tracking devices like [Apple Watch](https://www.apple.com/watch/), [Meta Motions](https://mbientlab.com/metamotions/), etc. And while there are activity-recognizing applications, there are still not much applications specifically on gym activities, which are really potential.
 
-This project aim is to create a machine learning model that can classify barbell exercises and count repetitions. 
+This project aim is to create a machine learning model that can automatically classify barbell exercises and count repetitions from quantified information.
 
 ## The quantified self
 
@@ -26,7 +26,7 @@ There are five participants joining in the dataset, which there information in t
 
 ![participants](docs/participants.png)
 
-The dataset was collect through a [Meta Motions](https://mbientlab.com/metamotions/) watch, every participants were asked to do a light set and heavy set on the following barbell exercises. 
+The dataset was collect through a [Meta Motions](https://mbientlab.com/metamotions/) watch in two weeks during January 2019, every participants were asked to do a light set and heavy set on the following barbell exercises. 
 
 During each set, the data was collected through Accelerometer and Gyroscope measurement and were saved in different files. For better understanding how these two works, please check out [**docs/Accelerometer-and-Gyroscope.md**](docs/Accelerometer-and-Gyroscope.md).
 
@@ -36,7 +36,7 @@ The time stored in the dataset is written in Unix time. You can read it in [**do
 ## Process 
 1. State the problem, collect data.
 2. Preprocessing raw dataset.
-3. 
+3. Data visualization.
 
 
 ## Installation 

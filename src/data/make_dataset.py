@@ -90,7 +90,7 @@ def read_data_from_files(files):
     gyr_set = 1
 
     for f in files:
-
+        data_path = "../../data/raw/MetaMotion\\"
         participant = f.split("-")[0].replace(data_path, "")
         label = f.split("-")[1]
         category = f.split("-")[2].rstrip("123").rstrip("_MetaWear_2019")
@@ -130,8 +130,8 @@ acc_df, gyr_df = read_data_from_files(files)
 
 # Merging datasets
 data_merged = pd.concat([acc_df.iloc[:, :3], gyr_df], axis=1)
-data_merged.head(50)
-data_merged.dropna()
+# data_merged.head(50)
+# data_merged.dropna()
 
 data_merged.columns = [
     "acc_x",
@@ -140,9 +140,9 @@ data_merged.columns = [
     "gyr_x",
     "gyr_y",
     "gyr_z",
+    "participant",
     "label",
     "category",
-    "participant",
     "set",
 ]
 
@@ -157,9 +157,9 @@ sampling = {
     "gyr_x": "mean",
     "gyr_y": "mean",
     "gyr_z": "mean",
+    "participant": "last",
     "label": "last",
     "category": "last",
-    "participant": "last",
     "set": "last",
 }
 
