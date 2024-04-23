@@ -32,12 +32,19 @@ During each set, the data was collected through Accelerometer and Gyroscope meas
 
 The time stored in the dataset is written in Unix time. You can read it in [**docs/Working with Unix time**](docs/Working-with-Unix-time.md)
 
+## About Outlier detection 
+
+In this project, I used three different outlier detection techniques, then I chose the Chauvenet's Criterion for its result: 
+1. [Interquartile range (IQR)](docs/Interquatile_range.md)
+2. [Chauvenet’s Criterion](docs/Chauvenet’s_Criterion.md)
+3. [Local Outlier Factor](docs/Local_Outlier_Factor.md)
 
 ## Process 
 1. State the problem, collect data.
-2. Preprocessing raw dataset.
-3. Data visualization.
-
+2. Converting raw data, reading CSV files, splitting data, cleaning.
+3. Visualizing data, plotting time series data.
+4. [Outlier detection](docs/outliers.md), Chauvenet’s criterion, local outlier factor.
+5. 
 
 ## Installation 
 1. Deactivate the current conda environment 
@@ -51,7 +58,7 @@ conda env create -f environment.yml
 
 3. Check the environment list: 
 ```
-conda env lst
+conda env list
 ```
 4. Activate the environment (make sure the name of the environment is correct): 
 ```
@@ -60,4 +67,5 @@ conda activate tracking-barbell-exercises
 
 
 ## License
-MIT License 
+This repository license is under the MIT License.
+
