@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 # ----------------- Load data -----------------
-df = pd.read_pickle("../../data/interim/dataProcessed.pkl")
+df = pd.read_pickle("../../data/processed/dataProcessed.pkl")
 
 # ----------------- Adjust plot settings -----------------
 mpl.style.use("seaborn-v0_8-deep")
