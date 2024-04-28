@@ -91,4 +91,4 @@ data_resampled = pd.concat([df.resample(rule="200ms").apply(sampling).dropna() f
 data_resampled["set"] = data_resampled["set"].astype("int")
 
 # ----------------- Export dataset -----------------
-data_resampled.to_pickle("../../data/interim/dataProcessed.pkl")
+data_resampled.to_pickle("../../data/processed/dataProcessed.pkl")

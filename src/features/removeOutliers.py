@@ -6,7 +6,7 @@ import scipy
 from sklearn.neighbors import LocalOutlierFactor
 
 # ------------------------------ Load data ------------------------------
-df = pd.read_pickle("../../data/interim/dataProcessed.pkl")
+df = pd.read_pickle("../../data/processed/dataProcessed.pkl")
 
 outlier_columns = list(df.columns[:6])
 

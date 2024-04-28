@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from dataTransformation import LowPassFilter, PrincipalComponentAnalysis
-from temporalAbstraction import NumericalAbstraction
-from frequencyAbstraction import FourierTransformation
+from ml4qs.dataTransformation import LowPassFilter, PrincipalComponentAnalysis
+from ml4qs.temporalAbstraction import NumericalAbstraction
+from ml4qs.frequencyAbstraction import FourierTransformation
 from sklearn.cluster import KMeans
 
 # ----------------- Load data -----------------
@@ -129,4 +129,4 @@ subset = df_cluster[cluster_columns]
 df_cluster["cluster"] = kmeans.fit_predict(subset)
 
 # ----------------- Export dataset -----------------
-df_cluster.to_pickle("../../data/interim/dataFeatures.pkl")
+df_cluster.to_pickle("../../data/processed/dataFeatures.pkl")
